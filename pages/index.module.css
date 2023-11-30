@@ -1,0 +1,108 @@
+.discoverTheMagic,
+.welcomeToPlantpal {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.welcomeToPlantpal {
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.welcomeToPlantpal:hover {
+  font-weight: 500;
+  font-family: var(--font-playfair-display);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.discoverTheMagic {
+  font-size: 20px;
+  font-family: var(--font-poppins);
+  color: #000;
+}
+.frame2,
+.frame3 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.frame3 {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame2 {
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.beautifulGreenHouseplantsAnIcon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 492px;
+  object-fit: cover;
+}
+.frame,
+.frame1,
+.index1 {
+  overflow: hidden;
+  display: flex;
+}
+.frame1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-mini);
+}
+.frame,
+.index1 {
+  flex-direction: column;
+  justify-content: center;
+}
+.frame {
+  align-self: stretch;
+  align-items: flex-end;
+}
+.index1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 777px;
+  align-items: center;
+  gap: 169px;
+  text-align: left;
+  font-size: 48px;
+  color: var(--color-cadetblue);
+  font-family: var(--font-playfair-display);
+}
+@media screen and (max-width: 1200px) {
+  .frame1 {
+    flex-direction: row;
+    gap: var(--gap-mini);
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 960px) {
+  .frame1 {
+    flex-direction: row;
+    gap: var(--gap-mini);
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 420px) {
+  .beautifulGreenHouseplantsAnIcon,
+  .frame2 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frame1 {
+    flex-direction: column;
+    gap: var(--gap-mini);
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
