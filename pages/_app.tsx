@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
+        
         <title>plantpal</title>
         <meta
           name="viewport"

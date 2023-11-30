@@ -1,11 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Bars3Icon } from '@heroicons/react/24/outline';
+import { ArrowUpIcon } from '@heroicons/react/24/outline';
+
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="font-poppins">
+    <div className="font-poppins bg-white">
       <nav className="w-full fixed top-0 left-0 right-0 z-10 font-poppins">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
@@ -21,15 +24,10 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
+                    <ArrowUpIcon className = "h-6 w-6" />
+                    
                   ) : (
-                    <Image
-                      src="/hamburger-menu.svg"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
+                    <Bars3Icon className = "h-6 w-6" />
                   )}
                 </button>
               </div>
@@ -41,13 +39,13 @@ function NavBar() {
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-greenTheme  border-greenTheme  md:hover:text-greenTheme md:hover:bg-transparent">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                <li className="pb-6 text-xl py-4 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-lightGreen  border-black-500  md:hover:text-greenTheme md:hover:bg-transparent">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     Identify
                   </Link>
                 </li>
-                <li className="pb-6 text-xl py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-greenTheme  border-greenTheme  md:hover:text-greenTheme md:hover:bg-transparent">
+                <li className="pb-6 text-xl py-4 px-6 text-center  border-b-2 md:border-b-0  hover:bg-lightGreen  border-black-500  md:hover:text-greenTheme md:hover:bg-transparent">
                   <Link href="#blog" onClick={() => setNavbar(!navbar)}>
                     Search
                   </Link>

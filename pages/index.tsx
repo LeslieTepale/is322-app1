@@ -1,14 +1,15 @@
 // pages/index.tsx
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
 
 const Home: React.FC = () => {
   return (
     <div className="font-poppins">
-      <Navbar />
-      <h1>Welcome to My Next.js App</h1>
-      <p>This is the home page.</p>
+      <div><Navbar /></div>
+      <div><Hero /></div>
     </div>
+
   );
 };
 
