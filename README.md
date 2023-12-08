@@ -1,5 +1,7 @@
 ## PlantPal App
 
+By Leslie Tepale
+
 IS322
 
 [Click Here for Wireframe](https://www.figma.com/file/iyggwN4Oq9t3t7BLcBYqbo/plantapp-coding-copy?type=design&node-id=0%3A1&mode=design&t=KzXjyGXWevNmfzDh-1) on Figma
