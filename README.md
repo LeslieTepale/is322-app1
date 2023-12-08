@@ -1,7 +1,11 @@
-##PlantPal App
+## PlantPal App
+
 IS322
+
 [Click Here for Wireframe](https://www.figma.com/file/iyggwN4Oq9t3t7BLcBYqbo/plantapp-coding-copy?type=design&node-id=0%3A1&mode=design&t=KzXjyGXWevNmfzDh-1) on Figma
+
 Deployement on Vercel
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
