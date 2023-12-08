@@ -1,6 +1,12 @@
 import React from 'react';
 
-const StaticCard = ({ title, imageSrc, description }) => {
+interface StaticCardProps {
+  title: string;
+  imageSrc: string;
+  description: string;
+}
+
+const StaticCard: React.FC<StaticCardProps> = ({ title, imageSrc, description }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 md:flex max-w-screen-md mx-auto">
       <div className="flex-shrink-0 md:w-1/2">
