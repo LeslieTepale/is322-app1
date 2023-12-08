@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <div className="font-poppins">
       <div><Navbar /></div>
-      <div><Hero /></div>
+      <div className="mb-8"><Hero /></div>
       
       <div><StaticCard
       title="plant of the month: poinsettia"
@@ -20,7 +20,6 @@ const Home: React.FC = () => {
       />
       </div>
     </div>
-
   );
 };
 

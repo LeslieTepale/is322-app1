@@ -1,18 +1,23 @@
-const API_KEY = process.env.PLANT_API_KEY;
+// utils/api.js
+const API_KEY = process.env.NEXT_PUBLIC_PLANT_API_KEY;
 const BASE_URL = 'https://plant.id/api/v3';
 const IDENTIFICATION_ENDPOINT = '/identification';
 
-const identifyPlants = async (image) => {
+const identifyPlants = async (images) => {
   try {
+    const formData = new FormData();
+    formData.append('images', images);
+
+    console.log('Request Payload:', {
+      images: images, // Assuming image is a valid base64-encoded string
+    });
+
     const response = await fetch(BASE_URL + IDENTIFICATION_ENDPOINT, {
       method: 'POST',
       headers: {
         'Api-Key': API_KEY,
-        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        images: [image], // Assuming image is a base64-encoded string
-      }),
+      body: formData,
     });
 
     if (!response.ok) {

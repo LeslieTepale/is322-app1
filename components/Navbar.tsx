@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
-import { ArrowUpIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 
 function NavBar() {
@@ -24,7 +24,7 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <ArrowUpIcon className = "h-6 w-6" />
+                    <XMarkIcon className = "h-6 w-6" />
                     
                   ) : (
                     <Bars3Icon className = "h-6 w-6" />
@@ -40,14 +40,9 @@ function NavBar() {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="pb-6 text-xl py-4 md:px-6 text-center border-b-2 md:border-b-0 bg:white hover:bg-lightGreen  hover:text-white border-black-500  md:hover:text-greenTheme md:hover:bg-transparent">
-                  <Link href="/identify" onClick={() => setNavbar(!navbar)}>
-                    Identify
-                  </Link>
-                </li>
                 <li className="pb-6 text-xl py-4 px-6 text-center  border-b-2 md:border-b-0  bg:white hover:bg-lightGreen hover:text-white  border-black-500  md:hover:text-greenTheme md:hover:bg-transparent">
                   <Link href="/search" onClick={() => setNavbar(!navbar)}>
-                    Search
+                    Identify
                   </Link>
                 </li>
               
